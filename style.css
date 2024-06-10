@@ -10,3 +10,11 @@
 section {
    padding-top: 5rem;
 }
+
+.text-justify {
+   text-align: justify;
+}
+
+.icon {
+   font-size: 3rem;
+}
