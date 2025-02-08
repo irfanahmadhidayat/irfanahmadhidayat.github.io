@@ -3,34 +3,28 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Portfolio | Irfan Ahmad Hidayat</title>
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-         crossorigin="anonymous"
-      />
+      <title>Irfan Ahmad Hidayat</title>
+      <!-- Iconify -->
+      <link rel="icon" href="img/personal/irfan.png" class="rounded-circle" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
 
       <!-- CSS -->
       <link rel="stylesheet" href="style.css" />
-      <link rel="icon" href="img/irfan.png" class="rounded-circle" />
 
       <!-- font awesome -->
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
+      <link rel="stylesheet" href="fontawesome5.15.4/css/all.css" />
    </head>
    <body id="home">
       <!-- Navbar -->
       <nav
-         class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top"
+         class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm fixed-top py-3"
       >
          <div class="container">
-            <a class="navbar-brand" href="index.html">irfanahmadhidayat</a>
+            <a class="navbar-brand fw-bold" href="index.html"
+               >irfanahmadhidayat</a
+            >
             <button
                class="navbar-toggler"
                type="button"
@@ -44,20 +38,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#home"
-                        >Home</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#contact">Contact</a>
-                  </li>
+                  <div class="d-flex gap-3">
+                     <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="#home"
+                           >Home</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="#about"
+                           >About</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="#projects"
+                           >Projects</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="#contact"
+                           >Contact</a
+                        >
+                     </li>
+                  </div>
                </ul>
             </div>
          </div>
@@ -67,15 +69,14 @@
       <!-- Jumbotron -->
       <section class="jumbotron text-center pb-5">
          <img
-            src="img/irfan.JPG"
+            src="img/personal/irfan.JPG"
             alt="Irfan"
             width="200"
-            class="rounded-circle img-thumbnail"
+            class="rounded-circle img-thumbnail mb-3"
          />
-         <h1 class="display-4">Irfan Ahmad Hidayat</h1>
-         <p class="lead">
-            Computer Science Student | Web Programming Enthusiast
-         </p>
+         <h1 class="display-4 fw-semibold">Irfan Ahmad Hidayat</h1>
+         <p class="h3 mb-4">Full-Stack Web Developer Enthusiast</p>
+         <h5 class="fw-normal">Laravel | MySQL | Git | REST API</h5>
       </section>
       <!-- Jumbotron End -->
 
@@ -89,7 +90,15 @@
             </div>
             <div class="row justify-content-center fs-5 text-justify">
                <p>
-                 A 7th-semester Computer Science student at Universitas Muhammadiyah Magelang. Highly interested in web programming, particularly as a Fullstack Web Developer.
+                  I am a web developer with experience in building websites
+                  using Laravel. Currently, I am pursuing a degree in
+                  Informatics Engineering at Universitas Muhammadiyah Magelang,
+                  where I continue to enhance my skills in web development. I
+                  have expertise in Laravel, Bootstrap, MySQL, Git, and Postman.
+                  I have developed a house sales website for a company and
+                  created a simple CRUD RESTful API using Laravel. Additionally,
+                  I am eager to continue learning and expanding my skills in
+                  DevOps and Cloud Computing.
                </p>
             </div>
          </div>
@@ -99,64 +108,182 @@
       <!-- Projects -->
       <section id="projects" class="pb-5">
          <div class="container">
-            <div class="row text-center mb-5">
+            <div class="row text-center mb-4">
                <div class="col">
                   <h2>Highlights Projects</h2>
                </div>
             </div>
-            <div class="row justify-content-center">
-               <h2>Coming Soon...</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+               <div class="card shadow-sm m-2" style="width: 25rem">
+                  <img
+                     src="img/projects/enviroland.png"
+                     class="card-img-top"
+                     alt="Thumbnail"
+                     style="height: 225px; object-fit: cover"
+                  />
+
+                  <div class="card-body">
+                     <p class="card-text">
+                        This project is the development of a house sales website
+                        using Laravel 11 as the main framework, with a MySQL
+                        database for managing data such as products, users, and
+                        transactions. The user interface is designed using
+                        Bootstrap to ensure a responsive and user-friendly
+                        design.
+                     </p>
+                     <div
+                        class="d-flex justify-content-between align-items-center"
+                     >
+                        <div class="btn-group">
+                           <a
+                              href="https://enviroland.id/"
+                              class="btn btn-sm btn-outline-secondary"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              View Website
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card shadow-sm m-2" style="width: 25rem">
+                  <img
+                     src="img/projects/crud-restful-api-laravel-11.png"
+                     class="card-img-top"
+                     alt="Thumbnail"
+                     style="height: 225px; object-fit: cover"
+                  />
+
+                  <div class="card-body">
+                     <p class="card-text">
+                        This project is a RESTful API built using Laravel that
+                        provides CRUD operations for managing posts. Each post
+                        consists of an image, title, and content. The API is
+                        designed to be used with frontend applications such as
+                        React, Vue, or any other framework that consumes RESTful
+                        APIs.
+                     </p>
+                     <div
+                        class="d-flex justify-content-between align-items-center"
+                     >
+                        <div class="btn-group d-flex">
+                           <a
+                              href="https://aplikasi-rak-buku-snowy.vercel.app/"
+                              class="btn btn-sm btn-outline-secondary me-2 disabled"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              View Website
+                           </a>
+                           <a
+                              href="https://github.com/irfanahmadhidayat/restful-api-laravel-11"
+                              target="_blank"
+                              class="btn btn-sm btn-outline-secondary"
+                           >
+                              <i class="fab fa-github text-dark"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card shadow-sm m-2" style="width: 25rem">
+                  <img
+                     src="img/projects/aplikasi-rak-buku.png"
+                     class="card-img-top"
+                     alt="Thumbnail"
+                     style="height: 225px; object-fit: cover"
+                  />
+
+                  <div class="card-body">
+                     <p class="card-text">
+                        Aplikasi Rak Buku adalah aplikasi sederhana berbasis web
+                        yang digunakan untuk mengelola daftar buku. Pengguna
+                        dapat menambahkan buku baru, menandai buku yang sudah
+                        selesai dibaca, mencari buku berdasarkan judul, dan
+                        menghapus buku dari daftar.
+                     </p>
+                     <div
+                        class="d-flex justify-content-between align-items-center"
+                     >
+                        <div class="btn-group d-flex">
+                           <a
+                              href="https://aplikasi-rak-buku-snowy.vercel.app/"
+                              class="btn btn-sm btn-outline-secondary me-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              View Website
+                           </a>
+                           <a
+                              href="https://github.com/irfanahmadhidayat/aplikasi-rak-buku"
+                              target="_blank"
+                              class="btn btn-sm btn-outline-secondary"
+                           >
+                              <i class="fab fa-github text-dark"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </section>
       <!-- Projects End -->
 
       <!-- Contact -->
-      <section id="contact">
-         <div class="container mb-5">
+      <section id="contact" class="py-5 bg-light">
+         <div class="container">
             <div class="row text-center">
                <div class="col">
-                  <h2>Contact ME</h2>
+                  <h2 class="fw-bold text-dark pb-3">Contact Me</h2>
+                  <p class="text-muted">
+                     Let's connect! Feel free to reach out to me on social
+                     media.
+                  </p>
                </div>
             </div>
             <div class="row justify-content-center">
                <div
-                  class="col-md-8 text-center d-flex justify-content-center gap-5 mt-3"
+                  class="col-md-8 text-center d-flex justify-content-center gap-5 mt-1"
                >
                   <a
-                     href="https://www.instagram.com/irfanahmadhidayat/"
+                     href="https://github.com/irfanahmadhidayat"
                      target="_blank"
-                     ><i class="fab fa-instagram icon"></i
-                  ></a>
+                     class="contact-icon"
+                  >
+                     <i class="fab fa-github"></i>
+                  </a>
                   <a
                      href="https://www.linkedin.com/in/irfanahmadhidayat/"
                      target="_blank"
-                     ><i class="fab fa-linkedin icon"></i
-                  ></a>
-                  <a href="https://github.com/irfanahmadhidayat" target="_blank"
-                     ><i class="fab fa-github icon"></i
-                  ></a>
+                     class="contact-icon"
+                  >
+                     <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                     href="https://www.instagram.com/irfanahmadhidayat/"
+                     target="_blank"
+                     class="contact-icon"
+                  >
+                     <i class="fab fa-instagram"></i>
+                  </a>
                </div>
             </div>
          </div>
       </section>
+
       <!-- Contact End -->
 
       <!-- Footer -->
-      <footer class="bg-primary text-white text-center p-4">
-         <p>
-            Created with love by
-            <a href="#home" class="text-white fw-bold text-decoration-none"
-               >Irfan Ahmad Hidayat</a
-            >
+      <footer class="bg-dark text-white text-center pt-3 pb-1">
+         <p class="fw-semibold">
+            <i class="far fa-copyright"></i> 2025 Irfan Ahmad Hidayat
          </p>
       </footer>
       <!-- Footer End -->
 
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-         crossorigin="anonymous"
-      ></script>
+      <!-- Bootstrap JS -->
+      <script src="js/bootstrap.min.js"></script>
    </body>
 </html>
